@@ -1,12 +1,14 @@
 from helper import *
 import time, tulipy, os, ctypes
 os.system('cls||clear')
-
-pair     = 'ETHUSDT'
-interval = '15m'
-quantity = 0.25 # ETH
 inpos    = False
-testing  = False
+
+
+pair     = input('What pair: ')
+clp('valid intervals - 1m, 3m, 5m, 15m, 30m, 1h, 2h, 4h, 6h, 8h, 12h, 1d, 3d, 1w, 1M', fg.magenta)
+interval = input('What interval: ') 
+quantity = input('What quantity: ')
+testing  = True
 
 def strat(pair, quantity, interval):
     global inpos
