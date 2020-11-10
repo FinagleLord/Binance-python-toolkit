@@ -3,7 +3,6 @@ import time, tulipy, os, ctypes
 from ansicolors import bg, fg
 import ansicolors as ac
 os.system('cls||clear')
-ctypes.windll.kernel32.SetConsoleTitleW("RSIemaCross")
 
 pair     = 'ETHUSDT'
 interval = '15m'
@@ -50,5 +49,6 @@ def strat(pair, quantity, interval):
         print(f'{pair}: {round(price, 2)}')
         time.sleep(1)
         
+ctypes.windll.kernel32.SetConsoleTitleW(f"RSIemaCross: {pair}")
 strat(pair,quantity,interval)
     
