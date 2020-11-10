@@ -1,6 +1,6 @@
 from helper import *
 import time, tulipy, os, ctypes
-from ansicolors import bg, fg
+from ansicolors import bg, fg, clp
 import ansicolors as ac
 os.system('cls||clear')
 inpos    = False
