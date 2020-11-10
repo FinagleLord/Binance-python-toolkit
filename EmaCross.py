@@ -1,7 +1,6 @@
 from helper import *
 import time, tulipy, os, ctypes
 os.system('cls||clear')
-ctypes.windll.kernel32.SetConsoleTitleW("EmaCross")
 
 pair     = 'ETHUSDT'
 interval = '15m'
@@ -45,4 +44,6 @@ def strat(pair, quantity, interval):
                     print('sucess')
         print(f'{pair}:{price}')
         time.sleep(1)
+        
+ctypes.windll.kernel32.SetConsoleTitleW(f"EmaCross: {pair}")
 strat(pair,quantity,interval)
