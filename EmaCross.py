@@ -1,6 +1,7 @@
 from helper import *
-import time, tulipy, os
+import time, tulipy, os, ctypes
 os.system('cls||clear')
+ctypes.windll.kernel32.SetConsoleTitleW("EmaCross")
 
 pair     = 'ETHUSDT'
 interval = '15m'
