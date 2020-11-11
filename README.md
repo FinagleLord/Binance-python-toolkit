@@ -8,5 +8,6 @@ A toolkit that aims to make Binance automation easier, especially for the averag
 ## Running an example strategy:
 1. Go to the projects folder and copy its path
 2. Go to your terminal and type:
+                
                 cd THE_PATH_TO_SAID_FODER
                 python run.py
