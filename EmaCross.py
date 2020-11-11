@@ -1,7 +1,6 @@
 from helper import *
-import time, tulipy, os, ctypes, config
-import ansicolors as ac
-from ac import bg, fg, clp
+import time, tulipy, os, ctypes
+from ansicolors import clp, fg, bg
 os.system('cls||clear')
 inpos    = False
 
@@ -37,19 +36,16 @@ def strat(pair, quantity, interval):
                     inpos = True
                     print('sucess')
         # Sell      
-        elif inpos and last_close > last_shortema or last_close > last_medema or last_close > last_longema:
-            print('Selling')
+        if inpos == True and last_close > last_shortema or last_close > last_medema or last_close > last_longema:
             if testing == False:
+                print('Selling')
                 price = Get_price(pair)
-                balance = Asset_balance(pair)
-                if balance > quantity:
-                    order_succeded = Limit_sell(pair, quantity, price)
-                if balance < quantity:
-                    order_succeded = Limit_sell(pair, balance, price)
+                order_succeded = Limit_sell(pair, quantity, price)
                 if order_succeded:
                     time.sleep(3600)
                     inpos = False
                     print('sucess')
+                    
         print(f'{pair}:{price}')
         time.sleep(1)
         
