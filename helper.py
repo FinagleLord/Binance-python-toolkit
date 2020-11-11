@@ -56,7 +56,7 @@ def Print_price(pair, decimals=2):
 """Hey I was wondering if it would be possible to have conditional limit orders. 
 example if RSR reaches 0.02 Sell XX then place limit order to buy at 0.018"""
 
-def Conditional_sell_buy_back(pair, sellprice, sellamount, buyprice, buyamount)
+def Conditional_sell_buy_back(pair, sellprice, sellamount, buyprice, buyamount):
     # Start loop
     Loop = True
     while Loop:
@@ -71,7 +71,7 @@ def Conditional_sell_buy_back(pair, sellprice, sellamount, buyprice, buyamount)
         # Check every N seconds
         time.sleep(1)
         
-def Conditional_buy_then_sell(pair,  buyprice, buyamount, sellprice, sellamount)
+def Conditional_buy_then_sell(pair,  buyprice, buyamount, sellprice, sellamount):
     # Start loop
     Loop = True
     while Loop:
