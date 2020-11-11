@@ -9,9 +9,9 @@ A toolkit that aims to make Binance automation easier, especially for the averag
 1. Go to the projects folder and copy its path
 2. Go to your terminal and type:
                 
-                cd THE_PATH_TO_SAID_FOLDER
-                python run.py
-                
+        cd THE_PATH_TO_SAID_FOLDER
+        python run.py
+
 ![GitHub Logo](/logo.png)
 
 ## Motivation
