@@ -41,7 +41,10 @@ def strat(pair, quantity, interval):
             print('Selling')
             if testing == False:
                 price = Get_price(pair)
-                order_succeded = Limit_sell(pair, quantity, price)
+                if balance > quantity:
+                    order_succeded = Limit_sell(pair, quantity, price)
+                if balance < quantity:
+                    order_succeded = Limit_sell(pair, balance, price)
                 if order_succeded:
                     time.sleep(3600)
                     inpos = False
