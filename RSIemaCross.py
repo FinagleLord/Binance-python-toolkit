@@ -1,5 +1,5 @@
 from helper import *
-import time, tulipy, os, ctypes
+import time, tulipy, os, ctypes, config
 from ansicolors import bg, fg, clp
 import ansicolors as ac
 os.system('cls||clear')
