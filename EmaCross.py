@@ -27,7 +27,7 @@ def strat(pair, quantity, interval):
         last_medema   = medema[-1]
         last_longema  = longema[-1]
         # Buy
-        if last_close > last_shortema and last_close > last_medema and last_close > last_longema and inpos ==False:
+        if last_close > last_shortema and last_close > last_medema and last_close > last_longema and inpos == False:
             print(f'Buying {quantity} {pair}')
             if testing == False:
                 price = Get_price(pair)
@@ -36,7 +36,7 @@ def strat(pair, quantity, interval):
                     inpos = True
                     print('sucess')
         # Sell      
-        if inpos == True and last_close > last_shortema or last_close > last_medema or last_close > last_longema:
+        if last_close > last_shortema or last_close > last_medema or last_close > last_longema and inpos == True:
             if testing == False:
                 print('Selling')
                 price = Get_price(pair)
