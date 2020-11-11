@@ -11,3 +11,14 @@ A toolkit that aims to make Binance automation easier, especially for the averag
                 
                 cd THE_PATH_TO_SAID_FOLDER
                 python run.py
+                
+![GitHub Logo](/logo.png)
+
+## Motivation
+I got tired of looking at charts all day, so I 'found' a Colugo to do it for me.
+## Requirements
++ [Python](https://www.python.org/downloads/)
+## License
+[MIT](http://opensource.org/licenses/mit-license.php)
+## Donation Address
+ETH - 0xe723FC5DB87bf6B33346fB9a87B8c107EECa6E7C
