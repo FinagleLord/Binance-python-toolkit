@@ -40,7 +40,10 @@ def strat(pair, quantity, interval):
             if testing == False:
                 print(f'Selling {quantity} {pair}')
                 price = Get_price(pair)
-                order_succeded = Limit_sell(pair, quantity, price)
+                if balance > quantity:
+                    order_succeded = Limit_sell(pair, quantity, price)
+                if balance < quantity:
+                    order_succeded = Limit_sell(pair, balance, price)
                 if order_succeded:
                     print(f'{fg.yellow}sucess{ac.clear}')
                     time.sleep(3600)
