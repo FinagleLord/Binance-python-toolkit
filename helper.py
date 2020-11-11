@@ -52,3 +52,36 @@ def Market_sell(pair, quantity):
 def Print_price(pair, decimals=2):
     price = Get_price(pair)
     return print(f'{pair}:{round(price, decimals)}')
+
+"""Hey I was wondering if it would be possible to have conditional limit orders. 
+example if RSR reaches 0.02 Sell XX then place limit order to buy at 0.018"""
+
+def Conditional_sell_buy_back(pair, sellprice, sellamount, buyprice, buyamount)
+    # Start loop
+    Loop = True
+    while Loop:
+        # Get price of given pair
+        price = Get_price(pair)
+        # if price is equal or greater than your first sell price 
+        # then sell, and place a limit buy for a lower price
+        if price >= sellprice:
+            Limit_sell(pair, sellamount, price)
+            Limit_buy(pair, buyamount, buyprice)
+            Loop = False
+        # Check every N seconds
+        time.sleep(1)
+        
+def Conditional_buy_then_sell(pair,  buyprice, buyamount, sellprice, sellamount)
+    # Start loop
+    Loop = True
+    while Loop:
+        # Get price of given pair
+        price = Get_price(pair)
+        # if price is equal or less than your buy price 
+        # then buy, and place a limit sell at given rices
+        if price <= buyprice:
+            Limit_buy(pair, buyamount, price)
+            Limit_sell(pair, sellamount, sellprice)
+            Loop = False
+        # Check every N seconds
+        time.sleep(1)
